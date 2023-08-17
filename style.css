@@ -1,0 +1,32 @@
+/* Reset some default styling */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the Headet */
+.header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    position: fixed; /* Make the header fixed */
+    top: 1; /* Position it at the top of the viewport */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Adjust centering */
+    width: 90%; /* Take up the full width of the viewport */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+
+.logo h1 {
+    font-size: 24px;
+}
+
+/* Style the content */
+.content {
+    margin-top: 20px;
+    text-align: center;
+}
