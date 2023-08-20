@@ -1,48 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arts and Creativity</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-        nav ul {
-            list-style: none;
-        }
-
-        nav ul li {
-            display: inline-block;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Ambient Light Effects</title>
 </head>
 <body>
-    <div class="header">
-        <div class="logo">
-            <h1>Hasta El Fuego</h1>
+    <div class="cube">
+        <div class="top"></div>
+        <div>
+            <span style="--i:0;"></span>
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Details</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
     </div>
-
-    <div class="content">
-        <h2>Click on different parts of the image:</h2>
-        <img src="art.png" alt="Image Map Example" usemap="#imagemap" style="width: 100%; height: auto; max-width: 100%;">
-            <map name="imagemap">
-                <!-- Define clickable areas using shape and coordinates -->
-                <area shape="rect" coords="191,307,492,59" href="https://www.ciit.edu.ph/start-your-journey-early-through-the-arts-and-design-strand/">
-                <area shape="circle" coords="818,179,140" href="https://www.ciit.edu.ph/start-your-journey-early-through-the-arts-and-design-strand/">
-            </map>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
