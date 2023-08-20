@@ -46,10 +46,9 @@ body, h1, h2, ul, li {
 }
 
 .home-logo img {
-    max-width: 200px; /* Adjust the logo size as needed */
+    max-width: 50%; /* Adjust the logo size as needed */
     height: auto;
 }
-
 
 .home-content {
     flex: 2;
