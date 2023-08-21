@@ -5,8 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arts and Creativity</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
+    <div class="header">
+        <div class="logo">
+            <h1>Hasta El Fuego</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#">Details</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <div class="content">
         <!-- <h2>Click on different parts of the image:</h2> -->
         <img src="art.png" alt="Image Map Example" usemap="#imagemap" style="width: 100%; height: auto; max-width: 100%; margin-top: 0%;">
@@ -15,6 +43,15 @@
                 <area shape="rect" coords="191,307,492,59" href="https://gibsongodsan.github.io/moonnight/">
                 <area shape="circle" coords="818,179,140" href="https://gibsongodsan.github.io/GreenTesseract/">
             </map>
+    </div>
+    <div id="home-section" class="home-section">
+        <div class="home-logo">
+            <img src="art1.jpg" alt="Logo">
+        </div>
+        <div class="home-content">
+           <h2>Welcome to our Arts & Creativity</h2>
+            <p>Unleash your imagination on our arts and creativity website. Discover inspiring creations, engage in interactive projects, and explore a vibrant community of artists. Fuel your passion and ignite your artistic journey with us today.</p>
+        </div>
     </div>
 </body>
 </html>
