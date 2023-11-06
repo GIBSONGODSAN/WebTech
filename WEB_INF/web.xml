@@ -8,13 +8,4 @@
         <url-pattern>/SessionServlet</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>SessionDataServlet</servlet-name>
-        <servlet-class>SessionDataServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>SessionDataServlet</servlet-name>
-        <url-pattern>/SessionDataServlet</url-pattern>
-    </servlet-mapping>
-
 </web-app>

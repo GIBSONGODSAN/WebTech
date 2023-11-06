@@ -2,19 +2,15 @@
 <html>
 <head>
     <title>Session Management Example</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Session Management Example</h1>
-        <div class="button-container">
-            <form action="/MyServlets/SessionServlet" method="GET">
-                <button type="submit" class="create-session-button">Create Session</button>
-            </form>
-            <form action="/MyServlets/SessionDataServlet" method="GET">
-                <button type="submit" class="access-data-button">Access Session Data</button>
-            </form>
-        </div>
-    </div>
+    <h1>Session Management Example</h1>
+    <form action="/SessionServlet" method="post">
+        <input type="hidden" name="sessionId" value="12345">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
