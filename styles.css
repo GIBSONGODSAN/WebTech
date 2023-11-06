@@ -1,19 +1,23 @@
 body {
-    font-family: Arial, sans-serif;
     text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 form {
-    margin: 20px;
+    width: 300px;
+    margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f9f9f9;
-    display: inline-block;
+    background-color: #f8f8f8;
 }
 
-input[type="text"],
-input[type="password"] {
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
