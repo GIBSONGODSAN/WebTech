@@ -1,58 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arts and Creativity</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Student Registration</title>
     <style>
-        nav ul {
-            list-style: none;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
         }
-
-        nav ul li {
-            display: inline-block;
-            margin-right: 20px;
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
-
-        nav ul li a {
+        .form-group {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
             color: #fff;
-            text-decoration: none;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
         }
     </style>
 </head>
-
 <body>
-    <div class="header">
-        <div class="logo">
-            <h1>Hasta El Fuego</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home-section">Home</a></li>
-                <li><a href="frame.html">Details</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <div class="content">
-        <!-- <h2>Click on different parts of the image:</h2> -->
-        <img src="art.png" alt="Image Map Example" usemap="#imagemap" style="width: 100%; height: auto; max-width: 100%; margin-top: 0%;">
-            <map name="imagemap">
-                <!-- Define clickable areas using shape and coordinates -->
-                <area shape="rect" coords="191,307,492,59" href="https://gibsongodsan.github.io/moonnight/">
-                <area shape="circle" coords="818,179,140" href="https://gibsongodsan.github.io/GreenTesseract/">
-            </map>
-    </div>
-    <div id="home-section" class="home-section">
-        <div class="home-logo">
-            <img src="art1.jpg" alt="Logo">
-        </div>
-        <div class="home-content">
-           <h2>Welcome to our Arts & Creativity</h2>
-            <p>Unleash your imagination on our arts and creativity website. Discover inspiring creations, engage in interactive projects, and explore a vibrant community of artists. Fuel your passion and ignite your artistic journey with us today.</p>
-        </div>
+    <h1>Student Registration</h1>
+    <div class="container">
+        <form action="PrintServlet" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="regno">Register Number:</label>
+                <input type="text" id="regno" name="regno" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
     </div>
 </body>
 </html>
