@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Session Management Example</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Session Management Example</h1>
-    <form action="/SessionServlet" method="post">
-        <input type="hidden" name="sessionId" value="12345">
+    <h1>Welcome to My Web App</h1>
+    <form action="LoginServlet" method="post">
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username">
-        <input type="submit" value="Submit">
+        <input type="text" name="username" id="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <input type="submit" value="Login">
     </form>
 </body>
 </html>
