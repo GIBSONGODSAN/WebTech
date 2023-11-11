@@ -1,21 +1,8 @@
-<web-app>
-    
-    <servlet>
-        <servlet-name>InsertServlet</servlet-name>
-        <servlet-class>InsertServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>ViewServlet</servlet-name>
-        <servlet-class>ViewServlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>InsertServlet</servlet-name>
-        <url-pattern>/InsertServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ViewServlet</servlet-name>
-        <url-pattern>/ViewServlet</url-pattern>
-    </servlet-mapping>
-
-</web-app>
+<servlet>
+    <servlet-name>EvaluateServlet</servlet-name>
+    <servlet-class>EvaluateServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>EvaluateServlet</servlet-name>
+    <url-pattern>/EvaluateServlet</url-pattern>
+</servlet-mapping>
