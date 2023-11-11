@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login Page</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Database Management</title>
 </head>
 <body>
-    <form action="LoginServlet" method="post">
-        <label for="username">Username:</label>
-        <input type="text" name="username" id="username" required><br>
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" required><br>
-        <input type="submit" value="Login">
+    <h1>Database Management</h1>
+
+    <!-- Insert Form -->
+    <h2>Insert Data</h2>
+    <form action="InsertServlet" method="post">
+        Name: <input type="text" name="name" required>
+        Age: <input type="number" name="age" required>
+        <input type="submit" value="Insert">
     </form>
+
+    <!-- View Data -->
+    <h2>View Data</h2>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <!-- Data will be displayed here -->
+    </table>
 </body>
 </html>
